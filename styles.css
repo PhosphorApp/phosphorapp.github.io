@@ -192,3 +192,5 @@ footer {
     .gallery-large { grid-template-columns: 1fr; }
     .gallery-small { width: 100%; }
 }
+
+.hero .hero-caption { margin-top: 0.6rem; font-size: 0.95rem; }
