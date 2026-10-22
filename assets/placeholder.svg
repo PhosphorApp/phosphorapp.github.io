@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+	<rect width="1280" height="720" fill="#151923"/>
+	<rect x="8" y="8" width="1264" height="704" fill="none" stroke="#39ff9c" stroke-width="2" stroke-dasharray="14 10"/>
+	<text x="640" y="350" fill="#39ff9c" font-family="Segoe UI, Arial, sans-serif" font-size="48" text-anchor="middle">Screenshot placeholder</text>
+	<text x="640" y="410" fill="#9aa3b5" font-family="Segoe UI, Arial, sans-serif" font-size="28" text-anchor="middle">1280 x 720 - see assets/screenshots/README.md</text>
+</svg>

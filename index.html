@@ -1,4 +1,124 @@
-<html>
-    <title>Phosphor</title>
-    Placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phosphor - Music jukebox for virtual pinball cabinets</title>
+    <meta name="description" content="Phosphor is a media player and jukebox for virtual pinball cabinets and a capable stand-alone desktop media player, with audio-reactive visuals and optional DOF lighting.">
+    <meta property="og:title" content="Phosphor">
+    <meta property="og:description" content="A media player and jukebox for virtual pinball cabinets, with audio-reactive visuals and DOF lighting.">
+    <meta property="og:image" content="assets/screenshots/hero.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="nav">
+        <a class="brand" href="#top">Phosphor</a>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#videos">Videos</a>
+            <a href="#get-started">Get started</a>
+            <a href="#plugins">Plug-ins</a>
+            <a href="https://github.com/PhosphorApp/">GitHub</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <h1>Phosphor</h1>
+            <p class="tagline">A media player and jukebox for virtual pinball cabinets &mdash; and a capable stand-alone desktop media player.</p>
+            <p>Plays media across your cabinet's screens (playfield, backglass, topper, DMD) with audio-reactive animated visuals and optional DOF cabinet lighting.</p>
+            <p class="cta">
+                <a class="btn primary" href="https://github.com/PhosphorApp/phosphor/releases/latest">Download latest release</a>
+                <a class="btn" href="https://github.com/PhosphorApp/phosphor">View on GitHub</a>
+            </p>
+            <!-- TODO: assets/screenshots/hero.png - main UI with a visualization running -->
+            <img class="shot hero-shot" src="assets/screenshots/hero.png" alt="Phosphor playing a music video with visualization" onerror="this.onerror=null;this.src='assets/placeholder.svg'">
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div class="grid">
+                <article class="card"><h3>Many media sources</h3><p>Pluggable sources: YouTube, Plex, Jellyfin, Emby, Vimeo, Dailymotion, SoundCloud, Twitch, SiriusXM, iHeartRadio and a Local Folder source.</p></article>
+                <article class="card"><h3>Multi-screen layout</h3><p>Independent, individually positioned and sized windows for Playfield, Backglass, Topper and DMD. Also works in single-screen desktop mode.</p></article>
+                <article class="card"><h3>Audio-reactive visuals</h3><p>Visualizations driven by the audio, which also drive effects and DOF lighting.</p></article>
+                <article class="card"><h3>DOF lighting</h3><p>Triggers cabinet solenoids and LEDs via DirectOutput Framework through an isolated bridge process.</p></article>
+                <article class="card"><h3>Customizable icons</h3><p>Emoji tile icons from selectable font sets (Segoe, Twemoji, OpenMoji, Fluent Flat) in Color, Desaturated, Silhouette or Themed styles.</p></article>
+                <article class="card"><h3>Caching</h3><p>Optional video pre-fetch, thumbnail, playlist and category caches reduce network round-trips for a smoother experience.</p></article>
+                <article class="card"><h3>Controller input</h3><p>DirectInput joystick/gamepad support alongside keyboard bindings for button-box navigation.</p></article>
+                <article class="card"><h3>Extensible</h3><p>Additional plug-ins can be developed and loaded at runtime.</p></article>
+            </div>
+        </section>
+
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <!-- TODO: see assets/screenshots/README.md for the list of images needed -->
+            <div class="gallery gallery-large">
+                <figure><a class="lb" href="assets/screenshots/browse.png"><img class="shot" src="assets/screenshots/browse.png" alt="Browsing sources and playlists" onerror="this.onerror=null;this.src='assets/placeholder.svg'"></a><figcaption>Browsing sources, playlists and categories</figcaption></figure>
+                <figure><a class="lb" href="assets/screenshots/playfield.png"><img class="shot" src="assets/screenshots/playfield.png" alt="Playfield window" onerror="this.onerror=null;this.src='assets/placeholder.svg'"></a><figcaption>Playfield window playing a music video</figcaption></figure>
+            </div>
+            <div class="gallery gallery-small">
+                <figure><a class="lb" href="assets/screenshots/settings.png"><img class="shot" src="assets/screenshots/settings.png" alt="Settings window" onerror="this.onerror=null;this.src='assets/placeholder.svg'"></a><figcaption>Tweak visualizations, audio reactivity, logo, and colors</figcaption></figure>
+                <figure><a class="lb" href="assets/screenshots/SettingsDMD.png"><img class="shot" src="assets/screenshots/SettingsDMD.png" alt="DMD settings" onerror="this.onerror=null;this.src='assets/placeholder.svg'"></a><figcaption>Control sizes, icon, and layout</figcaption></figure>
+                <figure><a class="lb" href="assets/screenshots/SettingsLogging.png"><img class="shot" src="assets/screenshots/SettingsLogging.png" alt="Logging settings" onerror="this.onerror=null;this.src='assets/placeholder.svg'"></a><figcaption>Advanced logging, plugins, and diagnostics</figcaption></figure>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <div class="videos">
+                <figure><a href="https://www.youtube.com/watch?v=mY4DwBXnRB4"><img class="shot" src="https://img.youtube.com/vi/mY4DwBXnRB4/hqdefault.jpg" alt="Phosphor video overview"></a><figcaption>Overview and getting started tips</figcaption></figure>
+                <figure><a href="https://www.youtube.com/watch?v=O7UaOkVmF3g"><img class="shot" src="https://img.youtube.com/vi/O7UaOkVmF3g/hqdefault.jpg" alt="Phosphor visualizations"></a><figcaption>A survey of the available visualizations</figcaption></figure>
+            </div>
+        </section>
+
+        <section id="get-started">
+            <h2>Get started</h2>
+            <ol>
+                <li>Download the <a href="https://github.com/PhosphorApp/phosphor/releases/latest">latest release</a> and extract the ZIP to a folder of your choice. Settings are stored locally in that folder for portability. The first run may take a few seconds.</li>
+                <li>Open Settings to configure window positions, source plug-ins and optional server details.</li>
+            </ol>
+            <h3>Requirements</h3>
+            <ul>
+                <li>Windows 10/11 (x64)</li>
+                <li><a href="https://directoutputframework.github.io/">DirectOutput Framework</a> &mdash; optional, for DOF lighting</li>
+            </ul>
+            <p>Everything else (LibVLC, ffmpeg, projectM) is bundled. No separate VLC install is required.</p>
+        </section>
+
+        <section id="plugins">
+            <h2>Plug-ins &amp; developers</h2>
+            <p>Phosphor is built around a plug-in contract, so new media sources can be added without touching the app.</p>
+            <ul>
+                <li><a href="https://github.com/PhosphorApp/phosphor-plugins">phosphor-plugins</a> &mdash; the bundled source plug-ins.</li>
+                <li><a href="https://github.com/PhosphorApp/phosphor-abstractions">phosphor-abstractions</a> &mdash; the plug-in contract, published to NuGet as <code>Phosphor.Plugin.Abstractions</code>.</li>
+                <li><a href="https://github.com/PhosphorApp/phosphor/blob/master/docs/PLUGIN_AUTHORING_GUIDE.md">Plug-in Authoring Guide</a></li>
+                <li><a href="https://github.com/PhosphorApp/phosphor/blob/master/AGENTS.md">Architecture overview</a></li>
+                <li><a href="https://github.com/PhosphorApp/phosphor/blob/master/docs/KNOWN_ISSUES.md">Known issues</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Phosphor &middot; <a href="https://github.com/PhosphorApp">PhosphorApp on GitHub</a> &middot; <a href="https://github.com/PhosphorApp/phosphor/blob/master/LICENSE.txt">License</a></p>
+    </footer>
+    <div id="lightbox" class="lightbox" hidden><img alt=""></div>
+    <script>
+        (function () {
+            var box = document.getElementById("lightbox");
+            var big = box.querySelector("img");
+            document.querySelectorAll("a.lb").forEach(function (a) {
+                a.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    big.alt = a.querySelector("img").alt;
+                    big.src = a.querySelector("img").src;
+                    box.hidden = false;
+                });
+            });
+            function close() { box.hidden = true; big.removeAttribute("src"); }
+            box.addEventListener("click", close);
+            document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+        })();
+    </script>
+</body>
 </html>
